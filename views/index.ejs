@@ -1,0 +1,40 @@
+<div class="author">
+  <h1 class="author__heading">
+    Code & Beyond:<br />
+    My Web Development Journey.
+  </h1>
+  <p class="author__body">
+    Welcome to my corner of the web! I'm Ammar, a web developer passionate about
+    crafting efficient backend systems and designing intuitive user experiences.
+    Through this blog, I share insights from my journey—covering everything from
+    backend development with Node.js and MongoDB to WordPress customization and
+    e-commerce solutions. Whether you're here for coding tips, project
+    showcases, or just a dose of developer wisdom, I hope you find something
+    valuable. Let's build, refine, and grow together!
+  </p>
+</div>
+<img
+  src="/imgs/dev.jpg"
+  alt="person coding"
+  class="lol-img"
+  width="981"
+  height="528"
+/>
+<section class="article">
+  <h2 class="articles__heading">Latest post</h2>
+  <ul class="article-ul">
+    <% data.forEach(Post => { %>
+
+    <li>
+      <a href="/post/<%= Post._id %>">
+        <span><%= Post.title %></span>
+        <span class="article-list__date"><%= Post.createdAt %></span>
+      </a>
+    </li>
+    <% }) %>
+  </ul>
+  <% if (nextPage !== null) { %>
+
+  <a href="/?page=<%= nextPage %>" class="pagination">&lt; view older posts </a>
+  <% } %>
+</section>
