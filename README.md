@@ -19,12 +19,18 @@ Make sure you have **Node.js** installed. Then, run:
 npm install
 ```
 
-### **3️⃣ Start the Server**  
-```bash
-node server.js
+### **3️⃣ Set Up Environment Variables**  
+Create a `.env` file in the project root and add:  
+```
+MONGODB_URI=mongodb+srv://ammar:123@cluster0.a2lyw0f.mongodb.net/blog
 ```
 
-### **4️⃣ Open in Browser**  
+### **4️⃣ Start the Server**  
+```bash
+npm run dev
+```
+
+### **5️⃣ Open in Browser**  
 Once the server is running, navigate to:  
 ```
 http://localhost:4000
@@ -38,9 +44,12 @@ This blog is built using:
 - **Mongoose** (ODM for MongoDB)  
 - **CSS for styling**  
 
-Make sure to update `.env` if environment variables are required.  
-
 ## 📜 License  
 This project is open-source and free to use.  
 
 ---
+
+You're all set! 🚀 Copy this directly into your **README.md** on GitHub. Let me know if you'd like any refinements! 😃🔥  
+```
+
+This includes your **MongoDB connection setup** so users know how to configure the environment properly. Let me know if you need any edits! 🚀
