@@ -22,7 +22,8 @@ npm install
 ### **3️⃣ Set Up Environment Variables**  
 Create a `.env` file in the project root and add:  
 ```
-MONGODB_URI=mongodb+srv://ammar:123@cluster0.a2lyw0f.mongodb.net/blog
+MONGODB_URI=your_mongo_connection_string
+JWT_SECRET=your_jwt_secret
 ```
 
 ### **4️⃣ Start the Server**  
@@ -47,9 +48,3 @@ This blog is built using:
 ## 📜 License  
 This project is open-source and free to use.  
 
----
-
-You're all set! 🚀 Copy this directly into your **README.md** on GitHub. Let me know if you'd like any refinements! 😃🔥  
-```
-
-This includes your **MongoDB connection setup** so users know how to configure the environment properly. Let me know if you need any edits! 🚀
